@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+    <style>
+        .tiger-container {
+            display: grid;
+            gap: 5px;
+            /* border: 2px solid blue; */
+        }
+
+        /* .tiger-container .tiger {
+            height: 50vh;
+        } */
+
+        .tiger {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr) 2fr;
+            gap: 10px;
+            height: 50vh;
+            /* border: 2px solid black; */
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tiger-title {
+            margin: 0;
+        }
+
+        .tiger-text {
+            font-size: 15px;
+            text-align: justify;
+        }
+        .tiger-btn{
+            background-color: #0e7dc2;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+        }
+
+        @media screen and (max-width: 576px) {
+            .tiger-container {
+                display: flex;
+                flex-direction: column;
+                /* border: 2px solid blue; */
+                /* height: 200vh; */
+            }
+
+            .tiger {
+                /* display: flex;
+                flex-direction: column; */
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+                /* border: 2px solid red; */
+                height: 100vh;
+                padding: 20px 60px 0px;
+            }
+
+            .tiger-container .tiger {
+                /* height: 100vh; */
+            }
+
+            .img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tiger-container">
+        <div class="tiger">
+            <div class="tiger-img">
+                <img src="images/tiger4.webp" alt="" class="img">
+            </div>
+            <div>
+                <h2 class="tiger-title">Bengal Tiger1</h2>
+                <p class="tiger-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia pariatur
+                    adipisci
+                    vel perspiciatis sit. Veniam voluptatibus dignissimos quis facere perspiciatis magnam. Animi
+                    cupiditate dicta molestiae cumque qui. Impedit recusandae officiis officia sunt id, magnam fugiat
+                    aliquid expedita voluptatibus placeat at incidunt in nesciunt quos delectus aut doloribus, saepe
+                    tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis mollitia maxime? Neque, earum? Excepturi temporibus natus labore perspiciatis quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo recusandae, accusamus deserunt unde aut? Harum a obcaecati voluptate accusamus?</p>
+                <button class="tiger-btn">Read More</button>
+            </div>
+        </div>
+        <div class="tiger">
+            <div class="tiger-img">
+                <img src="images/tiger3.jpeg" alt="" class="img">
+            </div>
+            <div>
+                <h2 class="tiger-title">Bengal Tiger2</h2>
+                <p class="tiger-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia pariatur
+                    adipisci
+                    vel perspiciatis sit. Veniam voluptatibus dignissimos quis facere perspiciatis magnam. Animi
+                    cupiditate dicta molestiae cumque qui. Impedit recusandae officiis officia sunt id, magnam fugiat
+                    aliquid expedita voluptatibus placeat at incidunt in nesciunt quos delectus aut doloribus, saepe
+                    tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat possimus eveniet harum perspiciatis distinctio, dolor nisi reiciendis asperiores voluptatibus dolore?
+                </p>
+                <button class="tiger-btn">Read More</button>
+            </div>
+        </div>
+</body>
+
+</html>
